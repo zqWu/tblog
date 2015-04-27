@@ -13,11 +13,18 @@
 		})();
 	</script>
 
+	<script type="text/javascript">
+		function test1 (){
+			console.log('click test1');
+			_hmt.push(['_trackEvent', 'nav', 'click', 'literature']);
+		}
+	</script>
+
 </head>
 <body>
 <p>test baidu statistic</p>
 
-<a onclick="_hmt.push(['_trackEvent', 'nav', 'click', 'literature'])" href="http://www.domri330.info/">文学</a>
+<a onclick="test1()" href="http://www.domri330.info/">文学</a>
 
 </body>
 </html>
